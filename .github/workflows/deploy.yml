@@ -21,6 +21,7 @@ jobs:
           echo "Morning"
           pwd
 
-      - name: Github Actions 자페에 저장되어있는 변수 사용해보기
+      - name: Github Actions 자체에 저장되어있는 변수 사용해보기
         run: |
           echo $GITHUB_REPOSITORY
+          echo $GITHUB_SHA
