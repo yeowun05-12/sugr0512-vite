@@ -38,4 +38,4 @@ jobs:
           aws s3 cp ./dist s3://facebook-web-page94/ --recursive
 
       - name: Cloudfront 캐시 무효화
-        run: aws cloudfront create-invalidation --distribution -id E33BKRMUI3VN61 --paths "/*"
+        run: aws cloudfront create-invalidation --distribution-id E33BKRMUI3VN61 --paths "/*"
