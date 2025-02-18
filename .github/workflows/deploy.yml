@@ -14,9 +14,13 @@ jobs:
     steps:
       - name: Hello World 출력하기
         run: echo "Hello World"
-      
+
       - name: 여러 명령어 문장 작성하기
         run: |
           echo "Good"
           echo "Morning"
           pwd
+
+      - name: Github Actions 자페에 저장되어있는 변수 사용해보기
+        run: |
+          echo $GITHUB_REPOSITORY
